@@ -1,6 +1,6 @@
-import React from 'react';
-import notes from './assets/notes.js';
-import './App.scss';
+import React from "react";
+import notes from "./assets/notes.js";
+import "./App.scss";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <h1>Create your react xylophone</h1>
       <div className="xylophone">
         {/* I am placeholder buttons, please create me using a map, and with your own component */}
-        <button>c</button>
+        <button onClick={e => new Audio(notes[0].file).play()}>c</button>
         <button>d1</button>
         <button>e1</button>
         <button>f</button>
